@@ -1,10 +1,9 @@
 # Advance
 
-
-I built this code using java
-I created three classes, one for a student, the other for courses, and the last for the university.
-For the student's class, I created variables that hold the student's data, and an object from the Courses class holds the courses in which the student registered. The class contains a constructor to fill in the value of the variables and a getter to retrieve the variables.
-The course class contains variables that carry the course data and contains objects from the student class to register students and find out which students are registered in this course. There is a function that registers students in the course and a function that cancels the student’s registration.
-In the University class, I defined the object, one from the Student class and one from the Courses class, then I created a function to add students and courses to the university.
-Function works to register students in courses, as it takes two variables, the student number and course number, to register students in courses, and Function to delete them from courses, as it takes the student number and course number, searches for them, and calls the function to delete the student from Student Class and deletes it.
-Finally, functions were created to display reports, and one of them displays all available courses, one displays all the courses in which the student is registered, the other displays the students registered in a specific course, and the last one only calls the reporting functions at once.
+The program consists of seven classes. The first class is called UserInfo. It contains basic and common information variables for each employee, such as name, age, ID, number of hours, and hourly rate. It contains getter, setter, and constructor to pass information.
+The second class represents the Director. He inherited the Useranfo class and created an Array Object from the Manager and Staff classes. He created a function to add the manager and a function to add the staff responsible for them, and there was a constructor to pass data with variables.
+The third class, which is the Manager class, also inherited the Userranfo class and created an Arrival Object from the Staff class, and then created a function to add the Staff and Getter function.
+The fourth class, the Staff class, inherited UserInfo and created a constructor to pass the data
+The fifth class, which is the report class, contains two functions. The first calculates the budget by multiplying the hourly rate by the number of hours, and the second function displays the employees who are under the management of a specific manager or director.
+The sixth and seventh classes, which are Fake Databases and Connection, store data on a regular basis, where the Connection class is used to establish a connection with the user and retrieve information, where an object is created that is the caller, a function that makes the connection, and a getter function.
+As for the Vic Database class, it stores users and manages connections. It contains objects of the UserInfo type, objects of the Connect type, Function that adds users to the database, and Function that opens a connection with users. If a connection has been opened with the same user previously, it will reuse the existing connection, otherwise a connection will be created. new .
