@@ -1,10 +1,7 @@
 # Advance
 
-
-I built this code using java
-I created three classes, one for a student, the other for courses, and the last for the university.
-For the student's class, I created variables that hold the student's data, and an object from the Courses class holds the courses in which the student registered. The class contains a constructor to fill in the value of the variables and a getter to retrieve the variables.
-The course class contains variables that carry the course data and contains objects from the student class to register students and find out which students are registered in this course. There is a function that registers students in the course and a function that cancels the student’s registration.
-In the University class, I defined the object, one from the Student class and one from the Courses class, then I created a function to add students and courses to the university.
-Function works to register students in courses, as it takes two variables, the student number and course number, to register students in courses, and Function to delete them from courses, as it takes the student number and course number, searches for them, and calls the function to delete the student from Student Class and deletes it.
-Finally, functions were created to display reports, and one of them displays all available courses, one displays all the courses in which the student is registered, the other displays the students registered in a specific course, and the last one only calls the reporting functions at once.
+The first thing I created was the Observer pattern and its components
+  An interface called WeatherDataObserver contains the update function and display
+The WeatherDataSubject class contains two variables for temperature and humidity and a list of WeatherDataObserver and a constructor. The RegisterCurrentWeather function was created to add weather data, the NotifyObservers function updates the observer data, and the removeObserver function removes previously recorded data as required to be deleted. The last function is the Get to Return Temperature.
+The CurrentConditionsDisplay class and the Interface implementation were created, where I created two variables and the Construct receives a variable of the type WeatherDataSubject class. I implemented the implementation of the Update and Display function via Override, where the Update receives variables and assigns them to the global variables in the class and calls the Display, which displays the weather update.
+Finally, the StatisticsDisplay class implemented the WeatherDataObserver and created two variables of type List and Constructor that receives a variable of type WeatherDataSubject and the Update and Display function, where the averages were calculated and called in the Update function.
